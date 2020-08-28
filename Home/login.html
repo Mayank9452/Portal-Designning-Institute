@@ -10,7 +10,25 @@
 <body>
     <div class="login-container">
         <form action="/action_page.php" class= "login-form">
-            
+            <div class="image text-center mb-3">
+                <img src="images/avatar1.png" class="rounded-circle" alt="avatar">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <label for="username">Username:</label>
+                <input type="email" class="form-control rounded-pill form-control-lg" placeholder="Enter Username" id="username" name="user" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+            <div class="form-group">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <label for="pass">Password:</label>
+                <input type="text" class="form-control rounded-pill form-control-lg" id="pass" placeholder="Enter Password" name="pswd" required>
+                <div class="valid-feedback">Valid</div>
+                <div class="invalid-feedback">Please fill out this field</div>
+            </div>
+                
         </form>
     </div>
 
