@@ -26,6 +26,10 @@ body {
 .navbar-brand {
     padding: 9px 15px;
 }
+.navbar-brand img{
+    margin: -6px 0px;
+    width: 51px;
+}
 
 .navbar-default .navbar-nav > .active>a, 
 .navbar-default .navbar-nav > .active>a:hover,
