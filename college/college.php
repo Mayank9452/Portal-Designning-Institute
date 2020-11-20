@@ -21,36 +21,9 @@
 
   </head>
 <body>
-  <header>
-      
-<!--navigation-->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand text-uppercase text-white font-weight-bold" href="#">College Choice</a>
-    <button class="navbar-toggler text" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon text-white"></span>
-    </button>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-lg-auto">
-        <li class="nav-item ">
-          <a class="nav-link text-uppercase text-white mr-5" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-uppercase text-white mr-5" href="#">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-uppercase text-white mr-5" href="#">Top Universities</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-uppercase text-white mr-3" href="#">Login</a>
-          </li>
-      </ul>
       
-    </div>
-</nav>
-<!--end of navigation-->
-
-  </header>
+  <?php include 'partials/_header.php'; ?>
 
   <main>
 
