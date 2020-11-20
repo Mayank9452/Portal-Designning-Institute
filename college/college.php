@@ -49,13 +49,21 @@
               $id=$row['id']; 
           ?>
          
-      <div class="col-sm-12 col-md-6 col-lg-4" style="margin-bottom: 30px; padding: 15px;">
+         <div class="col-sm-12 col-md-6 col-lg-4" style="margin-bottom: 30px; padding: 15px;">
         <div class="card compare_card<?php echo $row['id']; ?>">
-          <img src="<?php echo $row["image"]; ?>" height="200" width="100%">
-          <p style="color: black; font-weight: 700; text-align:center;"><?php echo $row['name']; ?></p>
-          <p style="color: green; text-align: center;"><?php echo $row['location']; ?></p>
-          <button style="color: white; width:46%; height:50px; " class="btn btn-primary  compare" rel="<?php echo $row['id']; ?>">Compare</button>
-          <a >Read More <i class="fa fa-angle-double-right"></i></a>
+        <img src="./clgimg/<?php echo $row['id']; ?>.jpg" height="200" width="100%">
+          <h5 style="font-weight: bold;text-align: center;"><?php echo $row['name']; ?></h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">LOCATION: <?php echo $row['location']; ?></li>
+            <li class="list-group-item">FEES: <?php echo $row['Fee_Structure']; ?></li>
+            <li class="list-group-item">Ratings: <?php echo $row['Ratings']; ?>/5</li>
+          
+
+          </ul>
+          <div class="button_style" style="justify-content: space-between;display:flex">
+          <button style=" border: 1px solid #ff7900;color: #ff7900; background-color: white; width:50%;" class="compare" rel="<?php echo $row['id']; ?>">Compare</button>
+          <button style=" color: white;background-color: #ff7900; width:50%;border: none;">know more</button>
+          </div>
           <a href="threadlist.php?catid=<?php echo $row['id']; ?>" class="btn btn-primary">View Threads</a>
         
         </div>
