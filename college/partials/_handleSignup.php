@@ -2,6 +2,7 @@
 
 $showerror="false";
 
+
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     include '_dbconnect.php';
     $user_email=$_POST['signupEmail'];
@@ -37,11 +38,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
     else{
         $showerror="password do not match";
+        echo '$showerror';
         
     }
 }
 
  header("Location: /Portal-Designning-Institute/college/college.php?signupsuccess=false & error=$showerror");
-
+ 
 }
 ?>

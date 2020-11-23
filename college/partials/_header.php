@@ -67,12 +67,14 @@ if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true" ){
         </div>';
 }
 
-if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="false" ){
+if(isset($_GET['error']) && $_GET['error']!="false" )
+    {
     echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-              <strong>error!</strong> your account has not been created.
+              <strong>error!</strong> your account has not been created.'.$_GET['error'].'
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               </button>
           </div>';
   }
+
 ?>
