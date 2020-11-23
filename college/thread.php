@@ -64,17 +64,12 @@
 
 
     <div class="container my-4">
-        <div class="jumbotron">
-            <h1 class="display-4"> <?php echo $title; ?></h1>
-            <p class="lead"><?php echo $desc; ?></p>
+        <div class="jumbotron" style="background-image: url(../college/clgimg/qna1.jpg);background-position: center;background-size: cover;opacity: .9;">
+            <h1 class="display-4" style="color:white"> <?php echo $title; ?></h1>
+            <p class="lead" style="color:white"><?php echo $desc; ?></p>
             <hr class="my-4">
-            <p>This forum is for peer to peer for sharing knowledge to each other.
-                No Spam / Advertising / Self-promote in the forums. ...
-                Do not post copyright-infringing material. ...
-                Do not post “offensive” posts, links or images. ...
-                Do not cross post questions. ...
-                Remain respectful of other members at all times. </p>
-                <p>Posted by: <em><?php echo $posted_by;?></em></p>
+            
+                <p style="color:white">Posted by: <em><?php echo $posted_by;?></em></p>
         </div>
     </div>
 
@@ -82,7 +77,7 @@
     <?php
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
     echo '<div class="container">
-    <h1 class="py-2">Post a Comment</h1>
+    <h1 class="py-2">Know something about it ? Drop a comment then !</h1>
 
     <form action="'. $_SERVER['REQUEST_URI'] .'"  method="POST">
           
@@ -122,7 +117,7 @@
               $row2=mysqli_fetch_assoc($result2);
 
         echo '<div class="media my-3">
-                  <img src="https://source.unsplash.com/50x40/?users,png" class="mr-3" alt="...">
+        <img src="./clgimg/man.png" class="mr-3" alt="discuss" style="width:50px">
                       <div class="media-body">
                       <p class="font-weight-bold my-0">'.$row2['user_username'].' at'.$comment_time.'</p>
                          '. $content .'

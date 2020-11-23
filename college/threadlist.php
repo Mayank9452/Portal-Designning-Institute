@@ -134,6 +134,7 @@
                           '<h5 class="mt-0"><a class="text-dark" href="thread.php?threadid='.$id.'">'.$title.'</a></h5>
                           '.$desc.'</div>'.' <div class="font-weight-bold my-0"> Asked By:'. $row2['user_username'].' at '.$thread_time.'</div>'.
                           '</div>';
+                          
             }
             if($noresult){
               echo '<div class="jumbotron jumbotron-fluid">
