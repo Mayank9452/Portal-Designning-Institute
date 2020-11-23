@@ -4,10 +4,10 @@ $showerror="false";
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     include '_dbconnect.php';
-    $email=$_POST['loginEmail'];
+    $username=$_POST['loginUsername'];
     $pass=$_POST['loginPassword'];
 
-    $sql="select * from `users` where user_email='$email'";
+    $sql="select * from `users` where user_username='$username'";
     $result=mysqli_query($conn,$sql);
     $numrows=mysqli_num_rows($result);
     if($numrows==1){
@@ -16,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 session_start();
                 $_SESSION['loggedin']=true;
                 $_SESSION['sno']=$row['sno'];
-                $_SESSION['useremail']=$email;
+                $_SESSION['username']=$username;
                 header("Location:/Portal-Designning-Institute/college/college.php");
                 exit();
             }
