@@ -17,13 +17,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 $_SESSION['loggedin']=true;
                 $_SESSION['sno']=$row['sno'];
                 $_SESSION['username']=$username;
-                header("Location:/Portal-Designning-Institute/college/college.php");
+                header("Location:/Portal-Designning-Institute/college/college.php?loginsuccess=true");
                 exit();
             }
           
-                header("Location: /Portal-Designning-Institute/college/college.php");
+                header("Location: /Portal-Designning-Institute/college/college.php?loginsuccess=false");
             }
-            header("Location: /Portal-Designning-Institute/college/college.php");
+            header("Location: /Portal-Designning-Institute/college/college.php?loginsuccess=false");
         }
     
 ?>

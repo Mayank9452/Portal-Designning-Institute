@@ -74,6 +74,23 @@ if(isset($_GET['error']) && $_GET['error']!="false" )
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               </button>
+         </div>';
+  }
+
+  if(isset($_GET['loginsuccess']) && $_GET['loginsuccess']=="true" ){
+    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+              <strong>Success!</strong> You are login.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+              </button>
+          </div>';
+  }
+  if(isset($_GET['loginsuccess']) && $_GET['loginsuccess']=="false" ){
+    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>error!</strong>Credentials did not match.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
           </div>';
   }
 
