@@ -107,7 +107,7 @@
               $thread_user_id=$row['thread_user_id'];
               $noresult=false;
 
-              $sql2= "SELECT user_email FROM `users` WHERE sno='$thread_user_id'";
+              $sql2= "SELECT user_username FROM `users` WHERE sno='$thread_user_id'";
               $result2=mysqli_query($conn,$sql2);
               $row2=mysqli_fetch_assoc($result2);
              
@@ -117,7 +117,7 @@
                       <div class="media-body">'.
                       
                           '<h5 class="mt-0"><a class="text-dark" href="thread.php?threadid='.$id.'">'.$title.'</a></h5>
-                          '.$desc.'</div>'.' <div class="font-weight-bold my-0"> Asked By:'. $row2['user_email'].' at '.$thread_time.'</div>'.
+                          '.$desc.'</div>'.' <div class="font-weight-bold my-0"> Asked By:'. $row2['user_username'].' at '.$thread_time.'</div>'.
                           '</div>';
             }
             if($noresult){

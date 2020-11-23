@@ -25,10 +25,10 @@
       $thread_user_id=$row['thread_user_id'];
       $noresult=false;
 
-      $sql2= "SELECT user_email FROM `users` WHERE sno='$thread_user_id'";
+      $sql2= "SELECT user_username FROM `users` WHERE sno='$thread_user_id'";
               $result2=mysqli_query($conn,$sql2);
               $row2=mysqli_fetch_assoc($result2);
-              $posted_by=$row2['user_email'];
+              $posted_by=$row2['user_username'];
 
     }
     if($noresult){
@@ -117,14 +117,14 @@
               $comment_time=$row['comment_time'];
               $thread_user_id=$row['comment_by'];
 
-              $sql2= "SELECT user_email FROM `users` WHERE sno='$thread_user_id'";
+              $sql2= "SELECT user_username FROM `users` WHERE sno='$thread_user_id'";
               $result2=mysqli_query($conn,$sql2);
               $row2=mysqli_fetch_assoc($result2);
 
         echo '<div class="media my-3">
                   <img src="https://source.unsplash.com/50x40/?users,png" class="mr-3" alt="...">
                       <div class="media-body">
-                      <p class="font-weight-bold my-0">'.$row2['user_email'].' at'.$comment_time.'</p>
+                      <p class="font-weight-bold my-0">'.$row2['user_username'].' at'.$comment_time.'</p>
                          '. $content .'
                           
                       </div>
