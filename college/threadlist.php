@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <?php include 'partials/_header.php'; ?>
-    <?php include 'partials/_dbconnect.php'; ?>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <?php
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <?php include 'partials/_header.php'; ?>
+  <?php include 'partials/_dbconnect.php'; ?>
+
+  <?php
     $id=$_GET['catid'];
     $sql="SELECT * FROM `college_data` WHERE id=$id";
     $result=mysqli_query($conn,$sql);
@@ -25,7 +28,7 @@
     }
     ?>
 
-    <?php 
+  <?php 
     $method= $_SERVER['REQUEST_METHOD'];
     $showalert=false;
     if($method=='POST'){
@@ -47,22 +50,34 @@
     }
     ?>
 
-    <div class="container my-4">
-        <div class="jumbotron">
-            <h1 class="display-4">Welcome to <?php echo $name; ?> forum.</h1>
-            <p class="lead"><?php echo $location; ?></p>
-            <hr class="my-4">
-            <p>This forum is for peer to peer for sharing knowledge to each other.
-                No Spam / Advertising / Self-promote in the forums. ...
-                Do not post copyright-infringing material. ...
-                Do not post “offensive” posts, links or images. ...
-                Do not cross post questions. ...
-                Remain respectful of other members at all times. </p>
-            <a class="btn btn-success btn-lg" href="#" role="button">Learn more</a>
-        </div>
-    </div>
+  <div class="container my-4">
+    <div class="jumbotron"
+      style="background-image: url(../college/clgimg/qna.jpg);background-position: center;background-size: cover;opacity: .9;">
+      <h1 class="display-4">Welcome to <?php echo $name; ?> <span style="font-weight:400"><b style="color:white">Q/</b><b style="font-weight:500">A</b> Panel</span></h1>
+      <hr class="my-4">
 
-    <?php
+    </div>
+  </div>
+  <div class="container my-4" style="display:flex">
+    <div class="container my-2" style="display:inline-block;font-size:17px"><p>This forum is for peer to peer for sharing knowledge to each other.</p>
+    <ul style="font-size:20px">
+    <li > No Spam / Advertising / Self-promote in the forums</li>
+    <li> Do not post copyright-infringing material</li>
+    <li> Do not post “offensive” posts, links or images</li>
+    <li> Do not cross post questions</li>
+    <li> Remain respectful of other members at all times</li>
+    </ul>
+    </div>
+  
+    <div class="container my-2" style=" ">
+    <i class="fa fa-map-marker" style="font-size:40px;" aria-hidden="true"></i>
+    <p class="lead" style="display:inline-block;margin:8px;font-weight:bold;"><?php echo $location; ?>, Uttar Pradesh</p>
+    </div>
+    
+  </div>
+
+
+  <?php
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
     echo '<div class="container">
         <h1 class="py-2">Start a discussion.</h1>
@@ -85,16 +100,16 @@
     }
     else{
       echo '<div class="container">
-      <p class="lead">You are not logged in. please logged in to ask question</p>
+      <p class="lead" style="color:red">NOTE : You are not logged in. Kindly log in to ask questions</p>
     </div>';
     }
         ?>
 
-        
 
 
-<div class="container">
-          <?php
+
+  <div class="container">
+    <?php
             $id=$_GET['catid'];
             $sql="SELECT * FROM `threads` WHERE thread_cat_id=$id";
             $result=mysqli_query($conn,$sql);
@@ -130,20 +145,25 @@
             }
           ?>
 
-    </div>
+  </div>
 
 
-    <?php include 'partials/_footer.php'; ?>
-    <!-- Optional JavaScript; choose one of the two! -->
+  <?php include 'partials/_footer.php'; ?>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+  <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
