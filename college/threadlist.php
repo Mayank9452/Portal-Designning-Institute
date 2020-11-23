@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-  <title>Hello, world!</title>
+  <title>QnA</title>
 </head>
 
 <body>
@@ -52,10 +52,11 @@
 
   <div class="container my-4">
     <div class="jumbotron"
-      style="background-image: url(../college/clgimg/qna.jpg);background-position: center;background-size: cover;opacity: .9;">
-      <h1 class="display-4">Welcome to <?php echo $name; ?> <span style="font-weight:400"><b style="color:white">Q/</b><b style="font-weight:500">A</b> Panel</span></h1>
+      style="background-image: url(../college/clgimg/qna2.jpg);background-position: center;background-size: cover;opacity: .9;">
+      <h1 class="display-4" style="color:white">Welcome to <?php echo $name; ?> <span style="font-weight:400"><b style="color:black">Q</b>/<b style="color:black">A</b> Panel</span></h1>
       <hr class="my-4">
-
+      <i class="fa fa-map-marker" style="font-size:40px;color:white" aria-hidden="true"></i>
+    <p class="lead" style="display:inline-block;margin:8px;font-weight:bold;color:white"><?php echo $location; ?>, Uttar Pradesh</p>
     </div>
   </div>
   <div class="container my-4" style="display:flex">
@@ -70,8 +71,7 @@
     </div>
   
     <div class="container my-2" style=" ">
-    <i class="fa fa-map-marker" style="font-size:40px;" aria-hidden="true"></i>
-    <p class="lead" style="display:inline-block;margin:8px;font-weight:bold;"><?php echo $location; ?>, Uttar Pradesh</p>
+   
     </div>
     
   </div>
