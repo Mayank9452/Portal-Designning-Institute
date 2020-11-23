@@ -80,7 +80,7 @@
   <?php
     if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
     echo '<div class="container">
-        <h1 class="py-2">Start a discussion.</h1>
+        <h1 class="py-2"><img src="./clgimg/teamwork.png" class="mr-3" alt="discuss" style="width:115px">Go on, ask withour any hassle !</h1>
 
         
         <form action="'. $_SERVER["REQUEST_URI"].'" method="post">
@@ -128,11 +128,12 @@
              
 
         echo '<div class="media my-3">
-                  <img src="https://source.unsplash.com/50x40/?users,png" class="mr-3" alt="...">
+                  <img src="./clgimg/man.png" class="mr-3" alt="user" style="width:50px">
                       <div class="media-body">'.
                       
                           '<h5 class="mt-0"><a class="text-dark" href="thread.php?threadid='.$id.'">'.$title.'</a></h5>
-                          '.$desc.'</div>'.' <div class="font-weight-bold my-0"> Asked By:'. $row2['user_username'].' at '.$thread_time.'</div>'.
+                          '.$desc.'</div>'.' <div class="my-0">Asked By:</div>'.'<div> $row2['user_username']</div>'.' at '.$thread_time.'</div>'.
+
                           '</div>';
             }
             if($noresult){

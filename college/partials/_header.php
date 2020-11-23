@@ -70,7 +70,7 @@ if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true" ){
 if(isset($_GET['error']) && $_GET['error']!="false" )
     {
     echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-              <strong>error!</strong> your account has not been created.'.$_GET['error'].'
+              <strong>error!</strong> Your account has not been created. '.$_GET['error'].'
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               </button>
@@ -79,7 +79,7 @@ if(isset($_GET['error']) && $_GET['error']!="false" )
 
   if(isset($_GET['loginsuccess']) && $_GET['loginsuccess']=="true" ){
     echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-              <strong>Success!</strong> You are login.
+              <strong>Success!</strong> You are logged in.
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               </button>

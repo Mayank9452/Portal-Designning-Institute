@@ -20,10 +20,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     $result1=mysqli_query($conn,$existSql1);
     $numrows1=mysqli_num_rows($result1);
     if($numrows>0){
-        $showerror="email alredy exist";
+        $showerror="Email alredy exist, select another";
     }
     else if($numrows1>0){
-        $showerror="username alredy exist";
+        $showerror="Username alredy exist, select another";
     }
     else {
         if($pass==$cpass){
@@ -37,7 +37,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         }
     }
     else{
-        $showerror="password do not match";
+        $showerror="Password and Confirm Password do not match";
         echo '$showerror';
         
     }
