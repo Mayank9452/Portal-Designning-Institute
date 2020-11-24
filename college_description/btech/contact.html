@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            background-image: url('images/contact-image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+            opacity: 0.6;
+        }
+
+        .head {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .container1 {
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+
+        .heading {
+            padding: 20px;
+        }
+
+        .field {
+            padding: 30px 20px 0px 20px;
+            /* background-color: grey; */
+        }
+
+        input {
+            width: 100%;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 8px;
+            font-size: 14px;
+            padding: 5px;
+        }
+
+        .btn1 {
+            width: 50%;
+            margin: 20px auto;
+
+        }
+
+        span {
+            margin: 20px 10px 20px 10px;
+            font-size: 15px;
+        }
+
+        .information {
+            margin-top: 40px;
+            padding: 10px;
+            /* border: 1px solid black; */
+        }
+
+        .info {
+            margin: 40px 0px 0px 0px;
+        }
+        .form-control:focus {
+            border-color: rgb(130, 213, 238);
+            box-shadow: 0 0 0 0.2rem rgba(114, 61, 190, .25);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="./image/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler text" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-lg-auto font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">Top Universities</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-3" href="#">Login</a>
+                </li> -->
+            </ul>
+
+            <ul class="navbar-nav ml-lg-auto font-weight-bold mr-4">
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="login.html" role="button">LogIn</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">signup</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-white">
+        <div class="text-center head">
+            <h4>Let's Connect's With Us</h4>
+            <h5>We had glad to help you in choosing your dream college for your bright future.</h5>
+        </div>
+    </div>
+    <div class="container container1">
+        <div class="row row1">
+            <div class="col-sm-8">
+                <h3 class="text-center heading text-primary">Drop a message</h3>
+                <div>
+                    <form action="">
+                        <div class="row">
+                            <div class="field col-sm-6 form-group">
+                                <label for="firstname">FirstName</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Enter firstname" required>
+                            </div>
+                            <div class="field col-sm-6">
+                                <label for="Lastname">LastName</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Enter firstname" required>
+                            </div>
+                            <div class="field col-sm-6">
+                                <label for="email" >email</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Enter emailId" required>
+                            </div>
+                            <div class="field col-sm-6">
+                                <label for="phone">phone No</label>
+                                <br>
+                                <input type="text" class="form-control" placeholder="Enter phone number" required>
+                            </div>
+                            <div class="field col-sm-12">
+                                <label for="phone">write your message</label>
+                                <br>
+                                <textarea class="form-control" rows="3" id="comment"></textarea>
+                            </div>
+                            <br>
+                            <button class="btn btn1 btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4 heading text-center sec2" style="background-color: rgb(190 218 251 / 59%);">
+                <h4 class="text-white text-primary">Contact Information</h4>
+                <div class="information">
+                    <div class="info">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i><span><b>Jr-139 Hindalco,Renukoot
+                                UP</b></span>
+                    </div>
+                    <div class="info">
+                        <i class="fa fa-phone" aria-hidden="true"></i><span><b>7856743678</b></span>
+                    </div>
+                    <div class="info">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i><span><b>support@gmail.com</b></span>
+                    </div>
+                    <div class="info">
+                        <i class="fa fa-search" aria-hidden="true"></i><span><b>portalDesign.com</span></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer bg-dark">
+        <div class="bg bg-success">
+            <div class="container">
+                <div class="row py-3 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-square text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin text-white "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+
+                <div class="logo col-md-3 mx-auto mb-4">
+                    <img class="mt-5" src="./image/logo.png" alt="logo">
+                </div>
+
+
+
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Career</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 74px; height: 2px;">
+
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#">Engineering</a></li>
+                        <li class="my-2"><a href="#">Commerece</a></li>
+                        <li class="my-2"><a href="#">Medical</a></li>
+                        <li class="my-2"><a href="#">Management</a></li>
+                        <li class="my-2"><a href="#">Laws</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Useful Links</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 130px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#">CompareCollege</a></li>
+                        <li class="my-2"><a href="#">Visit College</a></li>
+                        <li class="my-2"><a href="#">About Us</a></li>
+                        <li class="my-2"><a href="#">lorem</a></li>
+                        <li class="my-2"><a href="#">lorem</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 120px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home mr-3"></i>Jr-139 Hindalco,Renukoot UP</li>
+                        <li class="my-2"><i class="fas fa-envelope-square mr-3"></i>abc123@gmail.com</li>
+                        <li class="my-2"><i class="fas fa-phone-square mr-3"></i>+9176826587</li>
+                        <li class="my-2"><i class="fas fa-print mr-3"></i>+0087364857</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <p>&copy; footer-copyright
+                <a href="#">collegechoice.com</a>
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</head>
+
+</html>
