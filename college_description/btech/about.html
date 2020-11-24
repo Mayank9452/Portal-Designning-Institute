@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    .carousel .img1 {
+        border: 1px solid black;
+        width: 100vw;
+        height: 100vh;
+        /* opacity: 0.9; */
+    }
+
+    .description {
+        position: relative;
+    }
+
+    .content {
+        position: absolute;
+        width: 60vw;
+        margin: auto;
+        top: 25%;
+        left: 20%;
+        transform: rotate(20%, 25%);
+        background-color: black;
+        opacity: 0.6;
+    }
+
+    .content1 {
+        overflow: hidden;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .card-deck1{
+        display: flex;
+        align-content: space-between;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 580px){
+        .content {
+        position: absolute;
+        width: 100vw;
+        margin: auto;
+        top: 18%;
+        left: 0%;
+        transform: rotate(20%, 25%);
+        background-color: black;
+        opacity: 0.6;
+    }
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="college_description\btech\image\logo.png" alt="">
+        </a>
+        <button class="navbar-toggler text" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-lg-auto font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">Top Universities</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-3" href="#">Login</a>
+                </li> -->
+            </ul>
+
+            <ul class="navbar-nav ml-lg-auto font-weight-bold mr-4">
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="login.html" role="button">LogIn</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white mr-5" href="#">signup</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <div class="describe">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/lucas-law-pIToUG-_Vo0-unsplash.jpg" alt="Los Angeles" width="1100" height="500"
+                        class="img1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pexels-anastasiya-gepp-1462630.jpg" alt="Chicago" width="1100" height="500" class="img1">
+                </div>
+                <!-- <div class="carousel-item">
+            <img src="ny.jpg" alt="New York" width="1100" height="500">
+          </div>
+        </div> -->
+
+                <!-- Left nd right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+
+            </div>
+        </div>
+        <div class="container content">
+            <div class="content1 text-white">
+                <h1 class="text-center text-white">About Us</h1>
+                <div>
+                    our site is a gateway to exhaustive information about Colleges, Courses, Forums, Student-Driven
+                    Reviews and Ratings, and an interactive platform for students by helping them in getting to know
+                    about a college/university better and deeper.
+
+                    We keep the students and parents updated about the latest news and information regarding
+                    preferred Colleges, Exams, Courses and more. We actively interact with the students and guide
+                    them in making better decisions for careers of their choice.
+                </div>
+                <h1 class="text-center text-white my-2">Our Vision</h1>
+                <div>our site ambitiously aims to remove hurdles and aspires to be a catalyst in providing an online
+                    boutique for students who want to pursue their dream career by helping them make the right academic
+                    choices.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container text-center my-5">
+        <h1 class="my-2">Our Mentors</h1>
+        <div>Making this site was not so simple as its neeeds lot of new concepts and technology but all this can be
+            more simple and easy for us only by our mentors who helps in solving the hurdles that we face while making
+            site available to all the future aspirants </div>
+    </div>
+    <div class="card-deck1">
+        <div class="card1" style="width:250px">
+            <img class="card-img-top rounded-circle" src="images/anand_sir.PNG" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title text-center">Dr. Anand Prakash Gupta</h5>
+                <p class="card-text text-center">Assistant Professor - Institue of Engineering and Technology</p>
+                <p class="card-text text-center">Department - Computer Engineering and Applications</p>
+
+            </div>
+        </div>
+        <div class="card1" style="width:250px">
+            <img class="card-img-top rounded-circle" src="images/ruchi_mam.PNG" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title text-center">Ms Ruchi Gupta</h5>
+                <p class="card-text text-center">Trainer in Computer Engineering and Applications</p>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container text-center my-5">
+        <h1 class="my-2">Our Team Members</h1>
+        <div>Creative and transformative minds working in a perfect sync to create a pathway to better education. We are
+            a team of young enthusiasts who help students to make choices regarding Colleges, Courses, Scholarships etc
+            easier and better than ever before.</div>
+    </div>
+
+    <div class="card-deck1">
+        <div class="card1" style="width:250px">
+            <img class="card-img-top rounded-circle" src="images/kashika.PNG" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title text-center">Kashika Triphati</h5>
+                <p class="card-text text-center">front-end and backend developer</p>
+
+            </div>
+        </div>
+        <div class="card1" style="width:250px">
+            <img class="card-img-top rounded-circle" src="images/kaushik.PNG" alt="Card image" style="width: 100%" height="310px">
+            <div class="card-body">
+                <h5 class="card-title text-center">Master Kaushik Dutta</h5>
+                <p class="card-text text-center">frontend and backend developer</p>
+
+            </div>
+        </div>
+        <div class="card1" style="width:250px">
+            <img class="card-img-top rounded-circle" src="images/ashu.PNG" alt="Card image" style="width:100%">
+            
+            <div class="card-body">
+                <h5 class="card-title text-center">Ashutosh Kumar</h5>
+                <p class="card-text text-center">frontend and backend developer</p>
+            </div>
+        </div>
+        <div class="card1" style="width:250px">
+            <img class="card-img-top rounded-circle" src="images/mayank.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title text-center">Mayank Kumar Singh</h5>
+                <p class="card-text text-center">frontend and backend developer</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="page-footer bg-dark">
+        <div class="bg bg-success">
+            <div class="container">
+                <div class="row py-3 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-facebook text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-square text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin text-white "></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container text-center text-md-left mt-5">
+            <div class="row">
+
+                <div class="logo col-md-3 mx-auto mb-4">
+                    <img class="mt-5" src="college_description\btech\image\logo.png" alt="logo">
+                </div>
+
+
+
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Career</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 74px; height: 2px;">
+
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#">Engineering</a></li>
+                        <li class="my-2"><a href="#">Commerece</a></li>
+                        <li class="my-2"><a href="#">Medical</a></li>
+                        <li class="my-2"><a href="#">Management</a></li>
+                        <li class="my-2"><a href="#">Laws</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Useful Links</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 130px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="#">CompareCollege</a></li>
+                        <li class="my-2"><a href="#">Visit College</a></li>
+                        <li class="my-2"><a href="#">About Us</a></li>
+                        <li class="my-2"><a href="#">lorem</a></li>
+                        <li class="my-2"><a href="#">lorem</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+                    <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 120px; height: 2px;">
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home mr-3"></i>Jr-139 Hindalco,Renukoot UP</li>
+                        <li class="my-2"><i class="fas fa-envelope-square mr-3"></i>abc123@gmail.com</li>
+                        <li class="my-2"><i class="fas fa-phone-square mr-3"></i>+9176826587</li>
+                        <li class="my-2"><i class="fas fa-print mr-3"></i>+0087364857</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-copyright text-center py-3">
+            <p>&copy; footer-copyright
+                <a href="#">collegechoice.com</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
