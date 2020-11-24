@@ -12,6 +12,7 @@ $col1_sql="select * from college_data where id='".$collegeOne."'";
 $col1_query=mysqli_query($con,$col1_sql);
 $col1=mysqli_fetch_object($col1_query);
 
+
 $col2_sql="select * from college_data where id='".$collegeTwo."'";
 $col2_query=mysqli_query($con,$col2_sql);
 $col2=mysqli_fetch_object($col2_query);
@@ -64,7 +65,7 @@ $col2=mysqli_fetch_object($col2_query);
                 <div class="col-sm-5" style="margin-bottom: 30px; padding: 5px;">
                     <div class="card" style="border:3px solid rgb(255 119 109)">
                         
-                        <img src="<?php echo $col1->image; ?>" height="200" width="100%">
+                    <img src="./clgimg/<?php echo $col1->id; ?>.jpg" height="200" width=100% alt="">
                         <p style="text-align:center"><i class="fa fa-graduation-cap" aria-hidden="true"></i>  <?php echo $col1->name; ?></p>
                         <p style="text-align:center"><i class="fa fa-map-marker" aria-hidden="true"></i>  <?php echo $col1->location; ?>, Uttar Pradesh</p>
                         <p style="text-align:center"><i class="fa fa-inr" aria-hidden="true"></i>  <?php echo $col1->Fee_Structure; ?></p>
@@ -81,7 +82,8 @@ $col2=mysqli_fetch_object($col2_query);
                 <div class="col-sm-5" style="margin-bottom: 30px; padding: 5px;">
                     <div class="card" style="border:3px solid rgb(255 119 109)">
                         
-                        <img src="<?php echo $col2->image; ?>" height="200" width="100%">
+                    <img src="./clgimg/<?php echo $col2->id; ?>.jpg" height="200" width=100% alt="">
+                        
                         <p style="text-align:center"><i class="fa fa-graduation-cap" aria-hidden="true"></i>   <?php echo $col2->name; ?></p>
                         <p style="text-align:center"><i class="fa fa-map-marker" aria-hidden="true"></i>   <?php echo $col2->location; ?>, Uttar Pradesh</p>
                         <p style="text-align:center"><i class="fa fa-inr" aria-hidden="true"></i>   <?php echo $col2->Fee_Structure; ?></p>
