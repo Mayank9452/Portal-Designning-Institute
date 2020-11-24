@@ -4,7 +4,7 @@ session_start();
 
 
 echo ' <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<a class="navbar-brand" href="/Portal-Designning-Institute/college/college.php">College Choice</a>
+<a class="navbar-brand" href="/Portal-Designning-Institute/college_mba/college.php">College Choice</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -70,7 +70,7 @@ if(isset($_GET['signupsuccess']) && $_GET['signupsuccess']=="true" ){
 if(isset($_GET['error']) && $_GET['error']!="false" )
     {
     echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-              <strong>error!</strong> Your account has not been created. '.$_GET['error'].'
+              <strong>error!</strong> your account has not been created.'.$_GET['error'].'
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               </button>
@@ -79,7 +79,7 @@ if(isset($_GET['error']) && $_GET['error']!="false" )
 
   if(isset($_GET['loginsuccess']) && $_GET['loginsuccess']=="true" ){
     echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-              <strong>Success!</strong> You are logged in.
+              <strong>Success!</strong> You are login.
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
               <span aria-hidden="true">&times;</span>
               </button>
