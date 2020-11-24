@@ -132,7 +132,8 @@
                       <div class="media-body">'.
                       
                           '<h5 class="mt-0"><a class="text-dark" href="thread.php?threadid='.$id.'">'.$title.'</a></h5>
-                          '.$desc.'</div>'.' <div class="font-weight-bold my-0"> Asked By:'. $row2['user_username'].' at '.$thread_time.'</div>'.
+                          '.$desc.'</div>'.' <div> Asked By: '. $row2['user_username'].' <br>'.
+                          '<i class="fa fa-clock-o" aria-hidden="true"></i>  '.$thread_time.'</div>'.
                           '</div>';
                           
             }

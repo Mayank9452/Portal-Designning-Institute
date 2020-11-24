@@ -93,7 +93,7 @@
     else{
       echo '<div class="container">
       <h1 class="py-2">Post a comment</h1>
-      <p class="lead">You are not logged in. please logged in to post comment</p>
+      <p class="lead" style="color:red">You are not logged in. please logged in to post comment</p>
     </div>';
 
     }
@@ -119,8 +119,8 @@
         echo '<div class="media my-3">
         <img src="./clgimg/man.png" class="mr-3" alt="discuss" style="width:50px">
                       <div class="media-body">
-                      <p class="font-weight-bold my-0">'.$row2['user_username'].' at'.$comment_time.'</p>
-                         '. $content .'
+                      <p class="font-weight-bold my-0">'.$row2['user_username'].' </p>
+                         " '. $content .' "
                           
                       </div>
               </div>';
