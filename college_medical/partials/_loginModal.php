@@ -13,7 +13,7 @@
         </button>
       </div>
 
-      <form action="/Portal-Designning-Institute/college/partials/_handleLogin.php" method="POST">
+      <form action="/Portal-Designning-Institute/college_medical/partials/_handleLogin.php" method="POST">
       <div class="modal-body">
               
             <div class="form-group">

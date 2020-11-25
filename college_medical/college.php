@@ -1,5 +1,5 @@
 <?php
- $con= mysqli_connect('localhost','root','','college_db');
+ $con= mysqli_connect('localhost','root','','college_db3');
  ?>
 
 <!doctype html>
@@ -81,7 +81,7 @@
           <div class="button_style" style="justify-content: space-between;display:flex">
           <button style=" border: 1px solid #ff7900;color: #ff7900; background-color: white; width:50%;" class="compare" rel="<?php echo $row['id']; ?>">Compare</button>
 
-          <a href="../college_description/btech/<?php echo $row['id']; ?>.html" style="border: 1px solid black; color: white; background-color: #ff7900; width:50%; text-decoration:none; text-align:center;">Know more >></a>
+          <a href="../college_description/medical/<?php echo $row['id']; ?>.html" style="border: 1px solid black; color: white; background-color: #ff7900; width:50%; text-decoration:none; text-align:center;">Know more >></a>
 
           </div>
           <a href="threadlist.php?catid=<?php echo $row['id']; ?>" class="btn btn-primary">Q/A Panel</a>

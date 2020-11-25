@@ -4,8 +4,8 @@ session_start();
 
 
 echo ' <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-<a class="navbar-brand" style="margin-left: 37px;" href="#"><img src="college_description\btech\image\logo.png" alt="" style="width: 55px;"></a>
-<a class="navbar-brand text-uppercase text-white mr-5" href="/Portal-Designning-Institute/college/college.php">College Choice</a>
+<a class="navbar-brand" style="margin-left: 37px;" href="/Portal-Designning-Institute/index.php"><img src="college_description\btech\image\logo.png" alt="" style="width: 55px;"></a>
+<a class="navbar-brand text-uppercase text-white mr-5" href="/Portal-Designning-Institute/index.php">College Choice</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
