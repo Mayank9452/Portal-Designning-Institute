@@ -80,15 +80,8 @@
 
 <body>
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg-dark">
-        <a class="navbar-brand" href="#">
-            <img src="Home/image/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> <span style="color:white;font-weight: bold;">CollegeChoice</span>
-        </a>
-        <form class="form-inline">
-            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">LOGIN</button>
-        </form>
-    </nav>
+    <?php include 'partials/_header.php'; ?>
+
     <!--Carousel Wrapper-->
     <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
         <!--Indicators-->
@@ -173,7 +166,7 @@
             <div class="card mx-2">
                 <img class="card-img-top p-3" src="https://cdn0.iconfinder.com/data/icons/industrial-and-construction-3/70/132-512.png" alt="Card image cap">
                 <div class="card-body">
-                    <a href="">
+                    <a href="./college/college.php">
                         <h5 class="card-title text-center">ENGINEERING</h5>
                     </a>
                 </div>
