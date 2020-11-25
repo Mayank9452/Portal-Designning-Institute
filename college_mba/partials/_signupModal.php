@@ -9,7 +9,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="/Portal-Designning-Institute/college_mba/partials/_handleSignup.php" method="POST">
+      <form action="/Portal-Designning-Institute/college/partials/_handleSignup.php" method="POST">
       <div class="modal-body">
               
             <div class="form-group">

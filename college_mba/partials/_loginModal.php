@@ -13,7 +13,7 @@
         </button>
       </div>
 
-      <form action="/Portal-Designning-Institute/college_mba/partials/_handleLogin.php" method="POST">
+      <form action="/Portal-Designning-Institute/college/partials/_handleLogin.php" method="POST">
       <div class="modal-body">
               
             <div class="form-group">
@@ -27,11 +27,10 @@
                 <label for="exampleInputPassword1">Password</label>
                 <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Enter Password" requird>
             </div>
-         
+            
             <button type="submit" class="btn btn-primary" style="width:100% ; margin:0">Login</button>
             
       </div>
-      
       </form>
 
     </div>
