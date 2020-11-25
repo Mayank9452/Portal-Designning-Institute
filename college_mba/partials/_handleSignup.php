@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $result=mysqli_query($conn,$sql);
         if($result){
             $showalert=true;
-            header("Location: /Portal-Designning-Institute/college/college.php?signupsuccess=true");
+            header("Location: /Portal-Designning-Institute/college_mba/college.php?signupsuccess=true");
             exit();
         }
     }
@@ -43,7 +43,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     }
 }
 
- header("Location: /Portal-Designning-Institute/college/college.php?signupsuccess=false & error=$showerror");
+ header("Location: /Portal-Designning-Institute/college_mba/college.php?signupsuccess=false & error=$showerror");
  
 }
 ?>
