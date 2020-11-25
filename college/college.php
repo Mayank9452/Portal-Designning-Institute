@@ -82,7 +82,7 @@
           <a href="../college_description/btech/<?php echo $row['id']; ?>.html" style="border: 1px solid black; color: white; background-color: #ff7900; width:50%; text-decoration:none; text-align:center;">Know more >></a>
 
           </div>
-          <a href="threadlist.php?catid=<?php echo $row['id']; ?>" class="btn btn-primary">View Threads</a>
+          <a href="threadlist.php?catid=<?php echo $row['id']; ?>" class="btn btn-primary">Q/A Panel</a>
         
         </div>
       </div>	
@@ -118,7 +118,7 @@
             <div class="row">
 
                 <div class="logo col-md-3 mx-auto mb-4">
-                    <img class="mt-5"  src="./image/logo.png" alt="logo">
+                    <img class="mt-5"  src="./clgimg/logo.png" alt="logo">
                 </div>
 
     
@@ -128,7 +128,7 @@
                 <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 74px; height: 2px;">
                 
                 <ul class="list-unstyled">
-                 <li class="my-2"><a href="#">Engineering</a></li>
+                 <li class="my-2"><a href="./college.php">Engineering</a></li>
                  <li class="my-2"><a href="#">Commerece</a></li>
                  <li class="my-2"><a href="#">Medical</a></li>
                  <li class="my-2"><a href="#">Management</a></li>
@@ -144,8 +144,8 @@
                 <ul class="list-unstyled">
                     <li class="my-2"><a href="#">CompareCollege</a></li>
                     <li class="my-2"><a href="#">Visit College</a></li>
-                    <li class="my-2"><a href="#">About Us</a></li>
-                    <li class="my-2"><a href="#">lorem</a></li>
+                    <li class="my-2"><a href="../about.html">About Us</a></li>
+                    <li class="my-2"><a href="../contact.php">Contact us</a></li>
                     <li class="my-2"><a href="#">lorem</a></li>
                    
                    </ul>
