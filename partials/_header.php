@@ -13,19 +13,19 @@ echo ' <nav class="navbar navbar-expand-lg navbar-light bg-dark">
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-lg-auto font-weight-bold">
     <li class="nav-item">
-    <a class="nav-link text-uppercase text-white mr-5" href="#">About<span class="sr-only">(current)</span></a>
+    <a class="nav-link text-uppercase text-white mr-5" href="about.html">About<span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-    <a class="nav-link text-uppercase text-white mr-5" href="about.php">Contact Us</a>
+    <a class="nav-link text-uppercase text-white mr-5" href="contact.html">Contact Us</a>
     </li>
     <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle text-uppercase text-white mr-5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         College
     </a>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Engineering</a>
-        <a class="dropdown-item" href="#">Management</a>
-        <a class="dropdown-item" href="#">Medical</a>
+        <a class="dropdown-item" href="#">ENGINEERING</a>
+        <a class="dropdown-item" href="#">MANAGEMENT</a>
+        <a class="dropdown-item" href="#">MEDICAL</a>
     </div>
     </li>
 </ul>

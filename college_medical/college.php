@@ -31,14 +31,13 @@
         <div class="heading-text my-5">
             <div style="color:blue; font-size:54px; font-weight:500;"><span class="large">Medical</span></div>
         </div>
-        <p class="text-justify">The top engineering colleges in Uttar Pradesh have been ranked by many ranking agencies in India like NIRF, Outlook, The Week, etc. There are 27 public and 434 private engineering colleges in Uttar Pradesh.</p>
+        <p class="text-justify">The top medical colleges in Uttar Pradesh include 115 private and 27 government medical colleges, which have been ranked by agencies like NIRF and India Today. These colleges offer medical education to aspirants in 13 different courses including MBBS, MD, BSc, BPT, BHMS and even MCh degree.</p>
         <div class="ml-5 points">
             <ul>
-                <li>Some of the top colleges in the state for engineering include IIT Kanpur, IIT BHU Varanasi, Aligarh Muslim University, and JIIT Noida.</li>
-                <li>There are 411 BTech and 203 MTech colleges in Uttar Pradesh. Some colleges also offer PhD and MPhil in engineering degrees. </li>
-                <li>There is a Health Centre located on the campus of IIT Kanpur. The medical staff is well trained and is always prepared to attend to the medical needs of the students, faculty and staff on campus. </li>
-                <li>Admissions in these colleges are done through common engineering entrance exams like JEE Main, UPSEE, JEECUP, GATE, etc.</li>
-                <li>The average fee of top engineering colleges in Uttar Pradesh for BTech is INR 1,00,000-3,00,000 per year and INR 50,000-2,00,000 per year for MTech. </li>
+                <li>The state hosts some of the top medical colleges in India including King George’s Medical University, SGPGIMS Lucknow, BHU Varanasi and Aligarh Muslim University.</li>
+                <li>Admissions in these colleges are done through NEET and NEET PG for UG and PG courses respectively. </li>
+                <li>The number of total government MBBS seats in Uttar Pradesh stands at around 1900-2100. </li>
+                
             </ul>
         </div>
     </div>

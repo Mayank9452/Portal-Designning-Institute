@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing|Page</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+
+
     <style>
         .caption-button {
             display: none;
@@ -36,7 +40,10 @@
                 font-size: 25px;
             }
         }
-        
+        .w-100 {
+    
+    height: 100vh;
+}
         .container img {
             margin: auto;
             padding: auto;
@@ -89,45 +96,52 @@
             <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-2" data-slide-to="1"></li>
             <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            <li data-target="#carousel-example-2" data-slide-to="3"></li>
         </ol>
         <!--/.Indicators-->
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <div class="view">
-                    <img class="d-block w-100" src="./college_description/btech/images/bhu2.jpg" alt="First slide">
+                    <img class="d-block w-100" src="./images/b1.jpg" alt="First slide">
                     <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
-                    <h1 class="animated bounce text-primary" style="animation-delay:1s;font-weight: bold;">Helping You Choose the Right College <br> Our Vision</h1> <br>
-                    <button type="button" class="btn btn-dark btn-lg">Read More</button>
-                    <h3 class="h3-responsive">IIT BHU</h3>
+                    <h1 class="animated bounce" style="color:#fff;animation-delay:1s;font-weight: bold;">Helping You Choose the Right College <br> Our Vision</h1> <br>
+
                     <!-- <p>First text</p> -->
                 </div>
             </div>
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                    <img class="d-block w-100" src="./college_description/btech/images/iim luck.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="./images/b2.jpg" alt="Second slide">
                     <div class="mask rgba-black-strong"></div>
                 </div>
                 <div class="carousel-caption">
-                    <h1 class="animated bounce text-primary" style="animation-delay:1s;font-weight: bold;">Helping You Choose the Right College <br> Our Vision</h1> <br>
-                    <button type="button" class="btn btn-dark btn-lg">Read More</button><br>
-                    <h3 class="h3-responsive">IIM LUCKNOW</h3>
+                    <h1 class="animated bounce" style="color:#fff;animation-delay:1s;font-weight: bold;">Helping You Choose the Right College <br> Our Vision</h1> <br>
                     <!-- <p>Secondary text</p> -->
                 </div>
             </div>
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                    <img class="d-block w-100" src="./college_description/btech/images/iit.jpg" alt="Third slide">
+                    <img class="d-block w-100" src="./images/b3.jpg" alt="Third slide">
                     <div class="mask rgba-black-slight"></div>
                 </div>
                 <div class="carousel-caption">
-                    <h1 class="animated bounce text-primary" style="animation-delay:1s;font-weight: bold;">Helping You Choose the Right College <br> Our Vision</h1><br>
-                    <button type="button" class="btn btn-dark btn-lg">Read More</button>
-                    <h3 class="h3-responsive">IIT KANPUR</h3>
+                    <h1 class="animated bounce" style="color:#fff;animation-delay:1s;font-weight: bold;">Helping You Choose the Right College <br> Our Vision</h1><br>
+                    <!-- <p>Third text</p> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!--Mask color-->
+                <div class="view">
+                    <img class="d-block w-100" src="./images/b4.jpg" alt="Fourth slide">
+                    <div class="mask rgba-black-slight"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h1 class="animated bounce" style="color:#fff;animation-delay:1s;font-weight: bold;">Helping You Choose the Right College <br> Our Vision</h1><br>
                     <!-- <p>Third text</p> -->
                 </div>
             </div>
@@ -150,13 +164,13 @@
         <button type="button" class="btn btn-dark btn-lg">Read More</button>
     </div>
     <div class="my-5 text-center" style="color:indigo">
-        <h1>CHOOSE YOUR FUTURE, FINDING BEST COLLEGE</h1>
+        <h1>CHOOSE YOUR FUTURE, FIND YOUR BEST COLLEGE</h1>
     </div>
 
     <div class="container my-5">
         <div class="card-group" style="outline:none;">
             <div class="card mx-2">
-                <img class="card-img-top p-3" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/team-management-2223816-1859111.png" alt="Card image cap">
+                <img class="card-img-top p-5" src="./images/collaboration.png" alt="Card image cap">
                 <div class="card-body">
                     <a href="./college_mba/college.php">
                         <h5 class="card-title text-center">MANAGEMENT</h5>
@@ -164,7 +178,7 @@
                 </div>
             </div>
             <div class="card mx-2">
-                <img class="card-img-top p-3" src="https://cdn0.iconfinder.com/data/icons/industrial-and-construction-3/70/132-512.png" alt="Card image cap">
+                <img class="card-img-top p-5" src="./images/architect.png" alt="Card image cap">
                 <div class="card-body">
                     <a href="./college/college.php">
                         <h5 class="card-title text-center">ENGINEERING</h5>
@@ -172,21 +186,14 @@
                 </div>
             </div>
             <div class="card mx-2">
-                <img class="card-img-top p-3" src="https://image.flaticon.com/icons/png/512/1523/1523147.png" alt="Card image cap">
+                <img class="card-img-top p-5" src="./images/doctor.png" alt="Card image cap">
                 <div class="card-body">
                     <a href="./college_medical/college.php">
                         <h5 class="card-title text-center">MEDICAL</h5>
                     </a>
                 </div>
             </div>
-            <div class="card mx-2">
-                <img class="card-img-top p-3" src="https://image.flaticon.com/icons/png/512/93/93759.png" alt="Card image cap">
-                <div class="card-body">
-                    <a href="">
-                        <h5 class="card-title text-center">ARTS</h5>
-                    </a>
-                </div>
-            </div>
+           
         </div>
     </div>
 
@@ -260,6 +267,7 @@
             </div>
         </div>
     </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
