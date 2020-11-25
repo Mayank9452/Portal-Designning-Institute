@@ -29,7 +29,7 @@
 
   <div class="container" id="faculty">
         <div class="heading-text my-5">
-            <div style="color:blue; font-size:54px; font-weight:500;"><span class="large">B.Tech/BE (Bachelour Of Technology)</span></div>
+            <div style="color:blue; font-size:54px; font-weight:500;"><span class="large">Medical</span></div>
         </div>
         <p class="text-justify">The top engineering colleges in Uttar Pradesh have been ranked by many ranking agencies in India like NIRF, Outlook, The Week, etc. There are 27 public and 434 private engineering colleges in Uttar Pradesh.</p>
         <div class="ml-5 points">

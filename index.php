@@ -158,7 +158,7 @@
             <div class="card mx-2">
                 <img class="card-img-top p-3" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/team-management-2223816-1859111.png" alt="Card image cap">
                 <div class="card-body">
-                    <a href="">
+                    <a href="./college_mba/college.php">
                         <h5 class="card-title text-center">MANAGEMENT</h5>
                     </a>
                 </div>
@@ -174,7 +174,7 @@
             <div class="card mx-2">
                 <img class="card-img-top p-3" src="https://image.flaticon.com/icons/png/512/1523/1523147.png" alt="Card image cap">
                 <div class="card-body">
-                    <a href="">
+                    <a href="./college_medical/college.php">
                         <h5 class="card-title text-center">MEDICAL</h5>
                     </a>
                 </div>
