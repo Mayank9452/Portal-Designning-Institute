@@ -39,7 +39,7 @@ $col2=mysqli_fetch_object($col2_query);
                     <h2 style="text-align: center;">Compare College List</h2>
                 </div>
                 <div class="col-sm-1" style="margin-top: 30px;">
-                   <a href="./college.php">Back</a>
+                   <a href="./college.php" style="background-color: #00c851; color:#fff; padding:5px 20px; text-decoration:none">Back</a>
                 </div>
                	
             </div>
